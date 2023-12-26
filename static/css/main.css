@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap');
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(249, 128, 119);
+    display: flex;
+    flex-direction: column;
+}
+
+.footheader {
+    height: 40px;
+    width: 100%;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+#the-header {
+    border-bottom: 3px solid;
+    border-color: rgb(0, 0, 0);
+}
+
+#the-footer {
+    border-top: 3px solid;
+    border-color: rgb(0, 0, 0);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+#footer-text {
+    padding-left: 20px;
+    padding-top: 7px;
+}
+
+.nav-link {
+    display: block;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    border-right: 1px solid;
+    float: left;
+    color: black;
+
+}
+.nav-link:hover {
+    color: rgb(3, 91, 60);
+    background-color: aquamarine;
+    font-weight: 500;
+}
+
+.nav-link[aria-current="page"] {
+    color: rgb(3, 91, 60);
+    background-color: aquamarine;
+    font-weight: 500;
+}
+
+.dropbtn:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.dropdown {
+    width: 148px;
+    height: 130px;
+    position: absolute;
+    left: 30%;
+    top: 60px;
+    background-color: antiquewhite;
+    color: #ffaaaa;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    padding-right: 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(117, 40, 40, 0.451), 0 6px 20px 0 rgba(120, 32, 32, 0);
+}
+
+.dropdown-item {
+    width: 80%;
+    margin-bottom: 13px;
+    padding-left: 5px;
+    display: block;
+    text-decoration: none;
+    color: brown;
+    padding: 5px;
+    border-radius: 3px;   
+}
+
+.dropdown-item:hover {
+    background-color: #fcd1d1;
+}
+
+.container {
+    width: 100%;
+    flex-grow: 1;
+}
+
+/* Home page */
+
+#home-page-greeting {
+    padding-left: 15%;
+    padding-right: 5%;
+    margin-top: 170px;
+}
+
+#home-page-greeting h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 110px;
+}
+
+#home-page-greeting h2 {
+    padding-left: 2%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    float: left;
+    font-size: 30px;
+}
+
+#home-page-greeting a {
+    float: left;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 70px;
+}
+
+#home-page-greeting a:hover {
+    color: bisque;
+}
+
+#home-page-greeting a:active {
+    color: brown;
+}
+
+/* Contacts page */
+
+.main-contacts {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    margin-top: 200px;
+}
+
+.cont-greet {
+    margin-bottom: 40px;
+    margin-left: 7%;
+    margin-right: 15%;
+    float: right;
+}
+
+.cont-greet h1 {
+    font-size: 80px;
+}
+
+.cont-greet p {
+    font-size: 30px;
+}
+
+.cont-block {
+    float: right;
+    width: 25%;
+    height: 10%;
+    background-color: aliceblue;
+    text-align: left;
+    padding: 30px;
+    padding-right: 18px;
+    border-radius: 30px;
+    margin-right: 8%;
+  
+}
+
+.cont-block p {
+    font-size: 20px;
+}
+
+#cv-link {
+    font-size: 20px;
+    color: brown;
+}
+
+#cv-link:hover {
+    color: rgb(209, 91, 91);
+}
+
+.icon-block {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(247, 73, 93);
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    margin-right: 2%;
+    box-shadow: 0 4px 8px 0 rgba(120, 7, 7, 0.451), 0 6px 20px 0 rgba(120, 32, 32, 0.281);
+    transition-property: transform, background-color;
+    transition-duration: 350ms, 500ms;
+}
+
+.icon-block:hover {
+    background-color: rgb(255, 127, 153);
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.icon-block a i  {
+    transform: scale(1.4);
+    position: relative;
+    top: 14px;
+    color: rgb(255, 195, 212);
+    transition: color 350ms;
+}
+
+.icon-block a i:hover {
+    color: rgb(159, 0, 35);
+}
+
+/* About this webpage */
+
+.main-wbpg {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    margin-top: 200px;
+    
+}
+
+.wbpg-greet {
+    float: left;
+    margin-left: 10%;
+    
+}
+
+.wbpg-greet h1 {
+    font-size: 80px;
+}
+
+.wbpg-greet p {
+    font-size: 30px;
+}
+
+.wbpg-block {
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 30px;
+    padding-top: 20px;
+    font-size: 24px;
+}  
+
+.wbpg-block thead {
+    border-radius: 2px;
+    font-size: 30px;
+}
+
+.row-one {
+    background-color: rgb(255, 131, 158);
+    padding: 5px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row-two {
+    background-color: #ffcdcd;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* My projects page */
+
+.main-projects {
+    margin-top: 4%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    padding-bottom: 150px;
+}
+
+.projects-greet {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.online-projects-block {
+    background-color: aliceblue;
+    padding: 30px;
+    overflow: auto;
+    max-width: 77%;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 30px;
+}
+
+#pre-block-1 {
+    background-color: rgb(180, 250, 255);
+    color: #075a57;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 77%;
+    font-size: 25;
+}
+    
+
+.description {
+    width: 50%;
+    float: left;
+    font-size: 25px;
+}
+
+.description p a {
+    color: brown;
+    text-decoration: none;
+}
+
+.description p a:hover {
+    color: rgb(209, 91, 91);
+}
+
+.description p a:active {
+    color: rgb(237, 180, 180);
+}
+
+.site-image {
+    float: left;
+    margin-left: 8%;
+    width: 40%;
+}
+
+.site-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    /* -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0, 1)), to(rgba(0, 0, 0, 0))); */
+   
+}
+#zodiac-img {
+    margin-left: 0;
+    margin-right: 8%;
+}
+
+.other-projects-block {
+    background-color: rgb(180, 250, 255);
+    color: #075a57;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 77%;
+    min-height: 40px;
+}
+
+.prjct-label {
+    float: left;
+    font-size: 25;
+}
+
+.prjct-drp {
+    float: left;
+    margin-left: 20px;
+    margin-top: 7px;
+    font-size: 25px;
+    transition: rotate 1s;
+} 
+
+.prjct-drp:hover {
+    color: rgb(102, 187, 187);
+    cursor: pointer;
+}
+
+.prjct-drp:active {
+    rotate: 180deg;
+}
+
+.on {
+    rotate: 180deg;
+    position: relative;
+    bottom: 8px;
+}
+
+.prjct-drp-block {
+    background-color: aliceblue;
+    width: 72%;
+    margin-top: 70px;
+    text-align: left;
+    padding: 20px;
+    padding-right: 0;
+    border-radius: 30px;
+}
+
+.my-table {
+    color: #000;
+    width: 90%;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.my-table th {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 128, 147);
+    border-radius: 10px;
+}
+
+.my-table td {
+    padding: 10px;
+    background-color: rgb(255, 218, 227);
+    border-radius: 10px;
+}
+
+.my-table td a {
+    color: rgb(165, 42, 56);
+}
+
+.my-table td a:hover {
+    color: #f988a4;
+}
+
+#internal-link {
+    text-decoration: none;
+}
+
+/* About me page */
+
+.main-about {
+    margin-top: 100px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    padding-bottom: 150px;
+}
+
+.about-greet {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-greet p a {
+    text-decoration: none;
+    color: brown;
+}
+
+.about-greet p a:hover {
+    color: rgb(209, 91, 91);
+}
+
+.info-about {
+    background-color: aliceblue;
+    border-radius: 30px;
+    width: 60%;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* #about-me-table */

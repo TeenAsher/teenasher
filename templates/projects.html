@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="main-projects">
+    <div class="projects-greet">
+      <h1>The projects</h1>
+      <p>Page where you can find my latest works</p>
+    </div>
+    <div id="pre-block-1"><h2>Online projects:</h2></div>
+    <div class="online-projects-block">
+      <div class="description">
+        <h4>Tristar Inn Xpress</h4>
+        <p>The website - business card for a hotel. Contains its own booking system and supports the outsource booking as well.</p>
+        <p>Convenient navigation, useful side soft such as Google Maps API.</p>
+        <p>You can reach it using the <a href="http://www.tristarxpress.com">following link</a>.</p>
+      </div>
+      <div class="site-image"><img src="static/img/tristarImg.png" alt="Picture of hotel" /></div>
+    </div>
+    <div class="online-projects-block">
+      <div class="site-image" id="zodiac-img"><img src="static/img/zodiacImg.png" alt="Picture of zodiac" /></div>
+      <div class="description">
+        <h4>Zodiac online</h4>
+        <p>Simple and convenient single page Flask application for daily horoscope checkng</p>
+        <p>Daily forecasts and description for each zodiac sign provided</p>
+        <p><a href="http://zodiac.teenasher.space">This link</a> will help you to find out your destiny.</p>
+      </div>
+    </div>
+    <div class="online-projects-block">
+      <div class="description">
+        <h4>Check Essentials</h4>
+        <p>Useful single page Flask app that allows you to check necessary thing such as latest news feeds headlines, weather forecasts and currency rates.</p>
+        <p>Supports English as well as Russian and Japanese languages. Uses cookie.</p>
+        <p>Use <a href="http://check.teenasher.space">this link</a> to check your daily essentials.</p>
+      </div>
+      <div class="site-image"><img src="static/img/checkImg.png" alt="Picture of check"/></div>
+    </div>
+    <div class="other-projects-block">
+        <div class="prjct-label">  
+            <h2 type="button">See other projects and sources</h2>
+        </div>
+        <div class="prjct-drp"><i class="fa-solid fa-chevron-down"></i></div>
+        <div class="prjct-drp-block hide">
+            <table class="my-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>GitHub link</th>
+                </tr>
+                <tr>
+                    <td>TeenAsher</td>
+                    <td>My own representation in the Flask application. <a id="internal-link" href="/about/this_webpage">See specifications</a></td>
+                    <td><a href="https://github.com/TeenAsher/teenasher_next">/teenasher_next</a></td>
+                </tr>
+                <tr>
+                    <td>Zodiac online</td>
+                    <td>Simple application for daily horoscope check</td>
+                    <td><a href="https://github.com/TeenAsher/zodiac_online">/zodiac_online</a></td>
+                </tr>
+                <tr>
+                    <td>Waiter caller</td>
+                    <td>Implementation of a convenient waiter request system for restaurants</td>
+                    <td><a href="https://github.com/TeenAsher/waitercaller">/waitercaller</a></td>
+                </tr>
+                <tr>
+                    <td>Check Essentials</td>
+                    <td>App for checking weather forecast, currency rates and the headlines from different news feeds</td>
+                    <td><a href="https://github.com/TeenAsher/check_essentials">/check_essentials</a></td>
+                </tr>
+                <tr>
+                    <td>Tristar Inn Xpress</td>
+                    <td>Website - business card for Tristar Inn Xpress motel on historic Route 66</td>
+                    <td><a href="https://github.com/TeenAsher/tristar">/tristar</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </div>
+{% endblock %}
