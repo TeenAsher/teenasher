@@ -159,13 +159,13 @@
     .main-contacts {
         font-family: 'Kanit', sans-serif;
         font-weight: 300;
-        margin-top: 200px;
+        margin-top: 190px;
     }
 
     .cont-greet {
         margin-bottom: 40px;
         margin-left: 7%;
-        margin-right: 15%;
+        margin-right: 7%;
         float: right;
     }
 
@@ -187,6 +187,7 @@
         padding-right: 18px;
         border-radius: 30px;
         margin-right: 8%;
+        margin-bottom: 30px;
     }
 
     .cont-block p {
@@ -210,7 +211,7 @@
         text-align: center;
         float: left;
         margin-top: 20px;
-        margin-right: 2%;
+        margin-right: 3%;
         box-shadow: 0 4px 8px 0 rgba(120, 7, 7, 0.451), 0 6px 20px 0 rgba(120, 32, 32, 0.281);
         transition-property: transform, background-color;
         transition-duration: 350ms, 500ms;
@@ -232,6 +233,13 @@
 
     .icon-block a i:hover {
         color: rgb(159, 0, 35);
+    }
+
+    #indeed-img {
+        position: relative;
+        top: 14px;
+        right: 2px;
+        transition: color 350ms;
     }
 
     /* About this webpage */
@@ -656,13 +664,13 @@ html, body {
 
 .cont-block {
     width: 80%;
-    height: 180px;
+    height: 190px;
     background-color: aliceblue;
     text-align: left;
-    padding: 30px;
+    padding: 20px;
     padding-right: 18px;
     border-radius: 30px;
-    margin-left: 5%;
+    margin-left: 3%;
   
 }
 
@@ -711,6 +719,13 @@ html, body {
     color: rgb(159, 0, 35);
 }
 
+#indeed-img {
+    position: relative;
+    top: 14px;
+    right: 2px;
+    transition: color 350ms;
+}
+
 /* About this webpage */
 
 .main-wbpg {
@@ -722,7 +737,8 @@ html, body {
 
 .wbpg-greet {
     float: left;
-    margin-left: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
     
 }
 
@@ -737,7 +753,7 @@ html, body {
 .wbpg-block {
     float: left;
     margin-top: 20px;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 10%;
     background-color: aliceblue;
     border-radius: 30px;
@@ -862,7 +878,7 @@ html, body {
 }
 
 .prjct-label {
-    font-size: 25;
+    font-size: 20;
     text-align: center;
 }
 
@@ -893,16 +909,15 @@ html, body {
     background-color: aliceblue;
     width: 99%;
     margin-top: 20px;
+    padding-left: 5px;
     text-align: left;
-    padding: 5px;
-    padding-right: 0;
     border-radius: 30px;
 }
 
 .my-table {
     color: #000;
     width: 95%;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .my-table th {
@@ -963,7 +978,7 @@ html, body {
     padding: 20px;
     padding-left: 4%;
     padding-right: 0;
-    margin-left: 5%;
+    margin-left: 2%;
 }
     
 }
